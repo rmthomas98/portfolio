@@ -32,12 +32,12 @@ const App = () => {
       <p className="text-center pt-2 text-6xl text-white font-thin">
         Ryan Thomas
       </p>
-      <div className="justify-center pt-8 flex">
+      <div className="justify-center pt-8 flex flex-col mobile:flex-row pl-4 pr-4">
         <a
           href="https://github.com/rmthomas98"
           rel="noreferrer"
           target="_blank"
-          className="text-white font-thin bg-black/25 rounded-lg pt-2 pb-2 pl-6 pr-6 hover:bg-black/40 transition-all mr-2 flex items-center"
+          className="text-white font-thin bg-black/25 rounded-lg pt-2 pb-2 pl-6 pr-6 hover:bg-black/40 transition-all flex items-center justify-center mb-2 mobile:mr-2 mobile:mb-0"
         >
           <Github className="mr-2" />
           Github
@@ -46,20 +46,20 @@ const App = () => {
           href={resume}
           target="_blank"
           rel="noreferrer"
-          className="text-white font-thin bg-black/25 rounded-lg pt-2 pb-2 pl-6 pr-6 hover:bg-black/40 transition-all mr-2 cursor-pointer flex items-center"
+          className="text-white font-thin bg-black/25 rounded-lg pt-2 pb-2 pl-6 pr-6 hover:bg-black/40 transition-all cursor-pointer flex items-center justify-center mb-2 mobile:mr-2 mobile:mb-0"
         >
           <Clipboard className="mr-2" />
           Resume
         </a>
         <p
-          className="text-white font-thin bg-black/25 rounded-lg pt-2 pb-2 pl-6 pr-6 hover:bg-black/40 transition-all cursor-pointer flex items-center"
+          className="text-white font-thin bg-black/25 rounded-lg pt-2 pb-2 pl-6 pr-6 hover:bg-black/40 transition-all cursor-pointer flex items-center justify-center"
           onClick={() => setIsOpen(true)}
         >
           <Envelope className="mr-2" />
           Contact
         </p>
       </div>
-      <div className="pt-20">
+      <div className="pt-16 mobile:pt-20 pl-4 pr-4">
         <p className="text-center text-white font-thin text-3xl border-b border-slate-500/50 pb-2 max-w-sm mx-auto">
           Personal Projects
         </p>
@@ -157,7 +157,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="pt-20">
+      <div className="pt-16 mobile:pt-20 pl-4 pr-4">
         <p className="text-center text-white font-thin text-3xl border-b border-slate-500/50 pb-2 max-w-sm mx-auto">
           Freelance Work
         </p>
@@ -210,7 +210,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="pt-20 pb-20">
+      <div className="pt-16 pb-16 mobile:pt-20">
         <p className="text-center text-white font-thin text-3xl border-b border-slate-500/50 pb-2 max-w-sm mx-auto">
           Skills
         </p>
@@ -273,7 +273,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="border-t border-slate-500/50 bg-slate-900/50 w-full p-8 text-white">
+      <div className="border-t border-slate-500/50 bg-slate-900/50 w-full p-8 text-white ">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
           <p className="uppercase font-thin ">Ryan Thomas</p>
           <div className="flex">
