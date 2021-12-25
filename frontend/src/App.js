@@ -210,7 +210,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="pt-16 pb-16 mobile:pt-20">
+      <div className="pt-16 pb-16 mobile:pt-20 pl-4 pr-4">
         <p className="text-center text-white font-thin text-3xl border-b border-slate-500/50 pb-2 max-w-sm mx-auto">
           Skills
         </p>
