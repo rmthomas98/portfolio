@@ -10,7 +10,9 @@ module.exports = {
       },
       screens: {
         tablet: "924px",
-        mobile: "400px",
+        mobile: "420px",
+        skills: "1200px",
+        "skills-column": "625px",
       },
     },
   },

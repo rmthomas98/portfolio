@@ -214,61 +214,65 @@ const App = () => {
         <p className="text-center text-white font-thin text-3xl border-b border-slate-500/50 pb-2 max-w-sm mx-auto">
           Skills
         </p>
-        <div className="pt-10 tablet:flex tablet:justify-center">
-          <div className="tablet:border-r border-slate-500/50 p-4 mx-auto tablet:mx-0 border-b w-72 tablet:border-b-0">
-            <p className="text-center text-white pb-4 font-medium text-lg">
-              Frameworks/Libraries
-            </p>
-            <div className="flex justify-center">
-              <div className="p-4">
-                <img src={react} alt="react" className="h-12" />
-                <p className="text-center text-white font-thin mt-2">React</p>
+        <div className="pt-10 flex-wrap items-center skills-column:flex skills-column:justify-center ">
+          <div className="flex-col flex skills:flex-row">
+            <div className="skills-column:border-r border-slate-500/50 p-4 mx-auto tablet:mx-0 border-b w-72 skills:border-b-0">
+              <p className="text-center text-white pb-4 font-medium text-lg">
+                Frameworks/Libraries
+              </p>
+              <div className="flex justify-center">
+                <div className="p-4">
+                  <img src={react} alt="react" className="h-10" />
+                  <p className="text-center text-white font-thin mt-2">React</p>
+                </div>
+                <div className="p-4 flex flex-col items-center">
+                  <img src={tailwind} alt="tailwind" className="h-10" />
+                  <p className="text-center text-white font-thin mt-2">
+                    Tailwind CSS
+                  </p>
+                </div>
               </div>
+            </div>
+            <div className="border-slate-500/50 p-4 mx-auto tablet:mx-0 border-r-0 border-b w-72 skills:border-b-0 skills-column:border-r skills-column:border-b-0">
+              <p className="text-center text-white pb-4 font-medium text-lg w-64">
+                Languages
+              </p>
+              <div className="flex justify-center">
+                <div className="p-4 flex flex-col items-center">
+                  <img src={javascript} alt="javascript" className="h-10" />
+                  <p className="text-center text-white font-thin mt-2">
+                    Javascript
+                  </p>
+                </div>
+                <div className="p-4">
+                  <img src={css} alt="css" className="h-10" />
+                  <p className="text-center text-white font-thin mt-2">CSS</p>
+                </div>
+                <div className="p-4">
+                  <img src={html} alt="html" className="h-10" />
+                  <p className="text-center text-white font-thin mt-2">HTML</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex-col flex skills:flex-row">
+            <div className="skills:border-r border-slate-500/50 p-4 mx-auto tablet:mx-0 border-b w-72 skills:border-b-0">
+              <p className="text-center text-white pb-4 font-medium text-lg">
+                Version Control
+              </p>
               <div className="p-4 flex flex-col items-center">
-                <img src={tailwind} alt="tailwind" className="h-12" />
-                <p className="text-center text-white font-thin mt-2">
-                  Tailwind CSS
-                </p>
+                <img src={git} alt="git" className="h-10" />
+                <p className="text-center text-white font-thin mt-2">Git</p>
               </div>
             </div>
-          </div>
-          <div className="tablet:border-r border-slate-500/50 p-4 mx-auto tablet:mx-0 border-b w-72 tablet:border-b-0">
-            <p className="text-center text-white pb-4 font-medium text-lg">
-              Languages
-            </p>
-            <div className="flex justify-center">
+            <div className="p-4 w-72 mx-auto">
+              <p className="text-center text-white font-medium text-lg pb-4 mx-auto">
+                Hosting
+              </p>
               <div className="p-4 flex flex-col items-center">
-                <img src={javascript} alt="javascript" className="h-12" />
-                <p className="text-center text-white font-thin mt-2">
-                  Javascript
-                </p>
+                <img src={netlify} alt="netlify" className="h-10" />
+                <p className="text-center text-white font-thin mt-2">Netlify</p>
               </div>
-              <div className="p-4">
-                <img src={css} alt="css" className="h-12" />
-                <p className="text-center text-white font-thin mt-2">CSS</p>
-              </div>
-              <div className="p-4">
-                <img src={html} alt="html" className="h-12" />
-                <p className="text-center text-white font-thin mt-2">HTML</p>
-              </div>
-            </div>
-          </div>
-          <div className="tablet:border-r border-slate-500/50 p-4 mx-auto tablet:mx-0 border-b w-72 tablet:w-auto tablet:border-b-0">
-            <p className="text-center text-white pb-4 font-medium text-lg">
-              Version Control
-            </p>
-            <div className="p-4 flex flex-col items-center">
-              <img src={git} alt="git" className="h-12" />
-              <p className="text-center text-white font-thin mt-2">Git</p>
-            </div>
-          </div>
-          <div className="p-4">
-            <p className="text-center text-white font-medium text-lg pb-4">
-              Hosting
-            </p>
-            <div className="p-4 flex flex-col items-center">
-              <img src={netlify} alt="netlify" className="h-12" />
-              <p className="text-center text-white font-thin mt-2">Netlify</p>
             </div>
           </div>
         </div>
