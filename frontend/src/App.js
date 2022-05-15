@@ -19,6 +19,12 @@ import javascript from "./assets/images/javascript.svg";
 import git from "./assets/images/git.svg";
 import netlify from "./assets/images/netlify.svg";
 import resume from "./assets/files/ryan-thomas-resume.pdf";
+import pryzma from "./assets/images/pryzma.png";
+import next from "./assets/images/next-js.svg";
+import mongodb from "./assets/images/mongodb.svg";
+import node from "./assets/images/nodejs.svg";
+import vercel from "./assets/images/vercel.svg";
+import aone from "./assets/images/aone.png";
 import { useState } from "react";
 
 const App = () => {
@@ -58,6 +64,63 @@ const App = () => {
           <Envelope className="mr-2" />
           Contact
         </p>
+      </div>
+      <div className="pt-16 mobile:pt-20 pl-4 pr-4">
+        <p className="text-center text-white font-thin text-3xl border-b border-slate-500/50 pb-2 max-w-sm mx-auto">
+          Company Work
+        </p>
+        <div className="pt-10 flex flex-col justify-center tablet:flex-row">
+          <div className="rounded-lg bg-white/10 p-4 shadow-xl shadow-slate-800 max-w-fit mx-auto mb-6 tablet:mr-6 tablet:-mx-0 tablet:mb-0">
+            <img src={aone} alt="aone carpet" className="w-96 rounded-lg" />
+            <p className="text-white font-base text-2xl pt-2 pb-1">
+              Accounts Receivable
+            </p>
+            <p className="text-white font-thin flex items-center pb-2 max-w-fit border-b border-slate-500/50 mb-2 ">
+              This is a tool I created for the company I work at now which is
+              A-1 Carpet. It's a simple one page website that shows the accounts
+              receivable.
+            </p>
+            <p className="text-white mb-2 font-medium">Technicals</p>
+            <p className="text-white font-thin text-sm flex items-center pb-1">
+              <Dot />
+              <img src={next} alt="next js" className="h-4 mr-1" />
+              Next.js | <img
+                src={mongodb}
+                alt="mongodb"
+                className="h-4 mr-1"
+              />{" "}
+              MongoDB
+            </p>
+            <p className="text-white font-thin flex items-center">
+              <Dot />
+              Geist UI for styling
+            </p>
+            <p className="text-white font-thin pb-4 flex items-center">
+              <Dot />
+              Vercel for deployment.
+            </p>
+            <div className="pb-2 flex">
+              <a
+                href="https://github.com/rmthomas98/aoneadmin"
+                target="_blank"
+                rel="noreferrer"
+                className="text-white font-thin bg-black/25 pt-2 pb-2 pr-6 pl-6 rounded-lg mr-2 flex items-center hover:bg-black/40 transition-all"
+              >
+                <Code className="mr-2" />
+                Code
+              </a>
+              <a
+                href="https://aoneadmin.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+                className="text-white font-thin bg-black/25 pt-2 pb-2 pr-6 pl-6 rounded-lg flex items-center hover:bg-black/40 transition-all"
+              >
+                <Link45deg className="mr-2" />
+                Live
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="pt-16 mobile:pt-20 pl-4 pr-4">
         <p className="text-center text-white font-thin text-3xl border-b border-slate-500/50 pb-2 max-w-sm mx-auto">
@@ -214,64 +277,62 @@ const App = () => {
         <p className="text-center text-white font-thin text-3xl border-b border-slate-500/50 pb-2 max-w-sm mx-auto">
           Skills
         </p>
-        <div className="pt-10 flex-wrap items-center skills-column:flex skills-column:justify-center ">
-          <div className="flex-col flex skills:flex-row">
-            <div className="skills-column:border-r border-slate-500/50 p-4 mx-auto tablet:mx-0 border-b w-72 skills:border-b-0">
-              <p className="text-center text-white pb-4 font-medium text-lg">
-                Frameworks/Libraries
-              </p>
-              <div className="flex justify-center">
-                <div className="p-4">
-                  <img src={react} alt="react" className="h-10" />
-                  <p className="text-center text-white font-thin mt-2">React</p>
-                </div>
-                <div className="p-4 flex flex-col items-center">
-                  <img src={tailwind} alt="tailwind" className="h-10" />
-                  <p className="text-center text-white font-thin mt-2">
-                    Tailwind CSS
-                  </p>
-                </div>
+        <div className="flex justify-center mt-10">
+          <div className="flex icons:flex-row flex-col">
+            <div className="flex justify-center sm:flex-row flex-col">
+              <div className="p-4">
+                <img src={next} alt="nextjs" className="h-10 mx-auto" />
+                <p className="text-center text-white font-thin mt-2">Next.js</p>
               </div>
-            </div>
-            <div className="border-slate-500/50 p-4 mx-auto tablet:mx-0 border-r-0 border-b w-72 skills:border-b-0 skills-column:border-r skills-column:border-b-0">
-              <p className="text-center text-white pb-4 font-medium text-lg w-64">
-                Languages
-              </p>
-              <div className="flex justify-center">
-                <div className="p-4 flex flex-col items-center">
-                  <img src={javascript} alt="javascript" className="h-10" />
-                  <p className="text-center text-white font-thin mt-2">
-                    Javascript
-                  </p>
-                </div>
-                <div className="p-4">
-                  <img src={css} alt="css" className="h-10" />
-                  <p className="text-center text-white font-thin mt-2">CSS</p>
-                </div>
-                <div className="p-4">
-                  <img src={html} alt="html" className="h-10" />
-                  <p className="text-center text-white font-thin mt-2">HTML</p>
-                </div>
+              <div className="p-4">
+                <img src={react} alt="react" className="h-10 mx-auto" />
+                <p className="text-center text-white font-thin mt-2">React</p>
               </div>
-            </div>
-          </div>
-          <div className="flex-col flex skills:flex-row">
-            <div className="skills:border-r border-slate-500/50 p-4 mx-auto tablet:mx-0 border-b w-72 skills:border-b-0">
-              <p className="text-center text-white pb-4 font-medium text-lg">
-                Version Control
-              </p>
               <div className="p-4 flex flex-col items-center">
-                <img src={git} alt="git" className="h-10" />
-                <p className="text-center text-white font-thin mt-2">Git</p>
+                <img src={node} alt="nodejs" className="h-10 mx-auto" />
+                <p className="text-center text-white font-thin mt-2">Node.js</p>
+              </div>
+              <div className="p-4 flex flex-col items-center">
+                <img
+                  src={javascript}
+                  alt="javascript"
+                  className="h-10 mx-auto"
+                />
+                <p className="text-center text-white font-thin mt-2">
+                  Javascript
+                </p>
+              </div>
+              <div className="p-4">
+                <img src={mongodb} alt="mongodb" className="h-10 mx-auto" />
+                <p className="text-center text-white font-thin mt-2">MongoDB</p>
               </div>
             </div>
-            <div className="p-4 w-72 mx-auto">
-              <p className="text-center text-white font-medium text-lg pb-4 mx-auto">
-                Hosting
-              </p>
+            <div className="flex justify-center sm:flex-row flex-col">
               <div className="p-4 flex flex-col items-center">
-                <img src={netlify} alt="netlify" className="h-10" />
+                <img src={tailwind} alt="tailwind" className="h-10 mx-auto" />
+                <p className="text-center text-white font-thin mt-2">
+                  Tailwind CSS
+                </p>
+              </div>
+              <div className="p-4">
+                <img src={css} alt="css" className="h-10 mx-auto" />
+                <p className="text-center text-white font-thin mt-2">CSS</p>
+              </div>
+              <div className="p-4">
+                <img src={html} alt="html" className="h-10 mx-auto" />
+                <p className="text-center text-white font-thin mt-2">HTML</p>
+              </div>
+              <div className="p-4">
+                <img src={git} alt="git" className="h-10 mx-auto" />
+                <p className="text-center text-white font-thin mt-2">GIT</p>
+              </div>
+              <div className="p-4">
+                <img src={netlify} alt="netlify" className="h-10 mx-auto" />
                 <p className="text-center text-white font-thin mt-2">Netlify</p>
+              </div>
+              <div className="p-4">
+                <img src={vercel} alt="vercel" className="h-10 mx-auto" />
+                <p className="text-center text-white font-thin mt-2">Vercel</p>
               </div>
             </div>
           </div>
