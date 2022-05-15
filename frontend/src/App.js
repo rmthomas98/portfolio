@@ -8,7 +8,6 @@ import {
   Telephone,
   X,
 } from "react-bootstrap-icons";
-import movies from "./assets/images/movies.png";
 import dashboard from "./assets/images/dashboard.png";
 import react from "./assets/images/react.svg";
 import css from "./assets/images/css3.svg";
@@ -19,7 +18,7 @@ import javascript from "./assets/images/javascript.svg";
 import git from "./assets/images/git.svg";
 import netlify from "./assets/images/netlify.svg";
 import resume from "./assets/files/ryan-thomas-resume.pdf";
-import pryzma from "./assets/images/pryzma.png";
+import darkpine from "./assets/images/darkpine.png";
 import next from "./assets/images/next-js.svg";
 import mongodb from "./assets/images/mongodb.svg";
 import node from "./assets/images/nodejs.svg";
@@ -128,32 +127,27 @@ const App = () => {
         </p>
         <div className="pt-10 flex flex-col justify-center tablet:flex-row">
           <div className="rounded-lg bg-white/10 p-4 shadow-xl shadow-slate-800 mx-auto mb-6 tablet:mr-6 tablet:-mx-0 tablet:mb-0">
-            <img
-              src={movies}
-              alt="movie explorer"
-              className="w-96 rounded-lg"
-            />
-            <p className="text-white font-base text-2xl pt-2 pb-1">
-              Movie Explorer
-            </p>
+            <img src={darkpine} alt="darkpine" className="w-96 rounded-lg" />
+            <p className="text-white font-base text-2xl pt-2 pb-1">Darkpine</p>
             <p className="text-white font-thin flex items-center pb-2 max-w-sm border-b border-slate-500/50 mb-2 ">
-              Find the perfect movie for any occasion. Look through different
-              genres, see what the most popular movies are, and much more.
+              Darkpine is a cloud storage service that allows you to access all
+              of your files on any device. Collab, share, assign tasks, create a
+              team, and so much more.
             </p>
             <p className="text-white mb-2 font-medium">Technicals</p>
             <p className="text-white font-thin flex items-center pb-1">
               <Dot />
-              <img src={react} alt="react" className="h-4 mr-1" />
-              React | <img src={css} alt="css" className="h-4 mr-1 ml-1" />
+              <img src={next} alt="nextjs" className="h-4 mr-1" />
+              Next.js | <img src={css} alt="css" className="h-4 mr-1 ml-1" />
               CSS Modules
             </p>
             <p className="text-white font-thin pb-4 flex items-center">
               <Dot />
-              Info from IMDb REST API
+              Still working on this project
             </p>
             <div className="pb-2 flex">
               <a
-                href="https://github.com/rmthomas98/movies"
+                href="https://github.com/rmthomas98/darkpine"
                 target="_blank"
                 rel="noreferrer"
                 className="text-white font-thin bg-black/25 pt-2 pb-2 pr-6 pl-6 rounded-lg mr-2 flex items-center hover:bg-black/40 transition-all"
@@ -162,7 +156,7 @@ const App = () => {
                 Code
               </a>
               <a
-                href="https://affectionate-hypatia-176903.netlify.app/"
+                href="https://darkpine.io"
                 target="_blank"
                 rel="noreferrer"
                 className="text-white font-thin bg-black/25 pt-2 pb-2 pr-6 pl-6 rounded-lg flex items-center hover:bg-black/40 transition-all"
