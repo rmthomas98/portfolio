@@ -127,7 +127,7 @@ const App = () => {
           Personal Projects
         </p>
         <div className="pt-10 flex flex-col justify-center tablet:flex-row">
-          <div className="rounded-lg bg-white/10 p-4 shadow-xl shadow-slate-800 max-w-fit mx-auto mb-6 tablet:mr-6 tablet:-mx-0 tablet:mb-0">
+          <div className="rounded-lg bg-white/10 p-4 shadow-xl shadow-slate-800 mx-auto mb-6 tablet:mr-6 tablet:-mx-0 tablet:mb-0">
             <img
               src={movies}
               alt="movie explorer"
@@ -136,7 +136,7 @@ const App = () => {
             <p className="text-white font-base text-2xl pt-2 pb-1">
               Movie Explorer
             </p>
-            <p className="text-white font-thin flex items-center pb-2 max-w-fit border-b border-slate-500/50 mb-2 ">
+            <p className="text-white font-thin flex items-center pb-2 max-w-sm border-b border-slate-500/50 mb-2 ">
               Find the perfect movie for any occasion. Look through different
               genres, see what the most popular movies are, and much more.
             </p>
@@ -172,7 +172,7 @@ const App = () => {
               </a>
             </div>
           </div>
-          <div className="rounded-lg bg-white/10 p-4 shadow-xl shadow-slate-800 max-w-fit mx-auto tablet:-mx-0">
+          <div className="rounded-lg bg-white/10 p-4 shadow-xl shadow-slate-800 mx-auto tablet:-mx-0">
             <img
               src={dashboard}
               alt="Admin Dashboard"
@@ -181,7 +181,7 @@ const App = () => {
             <p className="text-white font-base text-2xl pt-2 pb-2">
               Admin Dashboard
             </p>
-            <p className="text-white font-thin flex items-center pb-2 max-w-fit border-b border-slate-500/50 mb-2">
+            <p className="text-white font-thin flex items-center pb-2 max-w-sm border-b border-slate-500/50 mb-2">
               Admin dashboard to see your personal account information for
               sales, transactions, and other visualized data.
             </p>
@@ -234,7 +234,7 @@ const App = () => {
             <p className="text-white font-base text-2xl pt-2 pb-2">
               Mini Golden Doodles
             </p>
-            <p className="text-white font-thin flex items-center pb-2 max-w-fit border-b border-slate-500/50 mb-2">
+            <p className="text-white font-thin flex items-center pb-2 border-b border-slate-500/50 mb-2 max-w-sm">
               Showcased info about the clients puppies so they could be sold.
               They asked for pictures of the dogs to be on display along with
               info about them.
